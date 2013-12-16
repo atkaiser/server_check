@@ -1,7 +1,11 @@
 server_check
 ============
 
-This is a script to check if a server is up.  You can use it if you want but you'll have to change some of the variables.  Right now I tell it to create a file on the desktop if the server is down.  In the future I will have it send an email when the script first notices that the server is down. To use you will usually want to install it to run as a cron script in the background.  The line I use is:
+This is a script to check if a server is up.  You can use it if you want but you'll have to change some of the variables.  Right now I tell it to create a file on the desktop if the server is down.  In the future I will have it send an email when the script first notices that the server is down. To use you will usually want to install it to run as a cron script in the background.  Download the script at set it as executable:
+
+	chmod +x test_server_up.sh
+
+Then set it to run in cron like:
 
 	*/5 * * * * bash --login -c test_server_up.sh > log.txt 2>&1
 

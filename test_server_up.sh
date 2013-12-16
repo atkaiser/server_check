@@ -21,6 +21,10 @@ then
 	done
 	if [ "$DESIRED" != "$OUTPUT" ]
 	then
+		if [ -f $TEMPFILE]
+		then
+			echo "This is the first run" > $TEMPFILE
+		fi
 		OUTPUT=`cat $TEMPFILE`
 		if [ "Up" == "$OUTPUT" ]
 			# Send an email
