@@ -28,7 +28,7 @@ then
 		OUTPUT=`cat $TEMPFILE`
 		if [ "Up" == "$OUTPUT" ]
 		then
-			# Send an email
+			echo "Email sent"
 		fi
 		echo "Down" > $TEMPFILE
 		echo "not OK the server is down"
