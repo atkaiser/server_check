@@ -27,6 +27,7 @@ then
 		fi
 		OUTPUT=`cat $TEMPFILE`
 		if [ "Up" == "$OUTPUT" ]
+		then
 			# Send an email
 		fi
 		echo "Down" > $TEMPFILE
